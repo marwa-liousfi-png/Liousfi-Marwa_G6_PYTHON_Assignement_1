@@ -209,24 +209,23 @@ Si cette valeur maximale est présente plusieurs fois dans la liste, on retourne
 </script>
 
 ````{admonition} Solution
-:class: tip, dropdown
-
-```python
-def argmax(liste):
-    i_max = None
-    # On initialise elem_max à une valeur
-    # qui n'est clairement pas le max
-    if len(liste) > 0:
-        elem_max = liste[0] - 1  
-    for i, elem in enumerate(liste):
-        if elem > elem_max:
-            i_max = i
-            elem_max = elem
-    return i_max
-
-print(argmax([1, 6, 2, 4]))
 ```
-````
+#correction ex1
+l = [3,8,15,-1,0,12]
+def argmax(l):
+    m,k = l[0],0
+    for i,e in enumerate(l):
+        if e > m:
+            m=e
+            k=i
+    return m,k
+   
+l = [3,8,15,-1,0,12]
+
+ma, po =argmax(l)      
+print("max : ", ma, "------>", po)
+```
+
 
 ## Manipulations de listes
 
