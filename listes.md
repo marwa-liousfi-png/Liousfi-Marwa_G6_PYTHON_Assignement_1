@@ -226,7 +226,7 @@ ma, po =argmax(l)
 print("max : ", ma, "------>", po)
 ```
 
-
+````
 ## Manipulations de listes
 
 Nous présentons dans ce qui suit les opérations élémentaires de manipulation de listes.
@@ -364,14 +364,13 @@ def intersection(liste1, liste2):
     return liste_intersection
 
 print(intersection([1, 6, 2, 4], [2, 7, 6]))
-```
-````
+
 
 ```{admonition} Exercice 4.3 : Union de listes
 :name: ex4.3
 Écrivez une fonction qui prenne deux listes en entrée et retourne l'union des deux listes (c'est-à-dire une liste contenant tous les éléments présents dans au moins une des deux listes) sans doublon.
 ```
-
+````
 <div id="pad_4.3" class="pad"></div>
 <script>
     Pythonpad('pad_4.3', 
